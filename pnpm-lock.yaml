@@ -11,6 +11,15 @@ importers:
       '@auth/prisma-adapter':
         specifier: ^2.10.0
         version: 2.10.0(@prisma/client@6.13.0(prisma@6.13.0(typescript@5.9.2))(typescript@5.9.2))(nodemailer@7.0.5)
+      '@conform-to/react':
+        specifier: ^1.8.2
+        version: 1.8.2(react@19.1.0)
+      '@conform-to/zod':
+        specifier: ^1.8.2
+        version: 1.8.2(zod@3.25.76)
+      '@hookform/resolvers':
+        specifier: ^5.2.1
+        version: 5.2.1(react-hook-form@7.62.0(react@19.1.0))
       '@prisma/client':
         specifier: ^6.13.0
         version: 6.13.0(prisma@6.13.0(typescript@5.9.2))(typescript@5.9.2)
@@ -50,9 +59,15 @@ importers:
       react-dom:
         specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
+      react-hook-form:
+        specifier: ^7.62.0
+        version: 7.62.0(react@19.1.0)
       tailwind-merge:
         specifier: ^3.3.1
         version: 3.3.1
+      zod:
+        specifier: ^3.23.8
+        version: 3.25.76
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3
@@ -125,6 +140,19 @@ packages:
     resolution: {integrity: sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow==}
     engines: {node: '>=6.9.0'}
 
+  '@conform-to/dom@1.8.2':
+    resolution: {integrity: sha512-5eDqI9366+23Fl/E5zxebuy2FCebJKpSrdE/c6PZQ5Ul59BYQ17pBmkLkvxAKjPXW+Qq77BJyjGjuklwmqN08A==}
+
+  '@conform-to/react@1.8.2':
+    resolution: {integrity: sha512-AJuHH4YY64o+VP3qsXd7bqlqCJYefTcEVj6mOiQr/m9iQV785gPtGE31jdmipvQ3ZHQE0Lp4e4th7kN/xo46qg==}
+    peerDependencies:
+      react: '>=18'
+
+  '@conform-to/zod@1.8.2':
+    resolution: {integrity: sha512-uYipAoNByusRji7j84o40r9IvYmsV84utfCfvqr2b746/8JnBuoO6C90yltan5D9OVAJMIKejXW4T1XfOsaMWg==}
+    peerDependencies:
+      zod: ^3.21.0 || ^4.0.0
+
   '@emnapi/core@1.4.5':
     resolution: {integrity: sha512-XsLw1dEOpkSX/WucdqUhPWP7hDxSvZiY+fsUC14h+FtQ2Ifni4znbBt8punRX+Uj2JG/uDb8nEHVKvrVlvdZ5Q==}
 
@@ -186,6 +214,11 @@ packages:
 
   '@floating-ui/utils@0.2.10':
     resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
+
+  '@hookform/resolvers@5.2.1':
+    resolution: {integrity: sha512-u0+6X58gkjMcxur1wRWokA7XsiiBJ6aK17aPZxhkoYiK5J+HcTx0Vhu9ovXe6H+dVpO6cjrn2FkJTryXEMlryQ==}
+    peerDependencies:
+      react-hook-form: ^7.55.0
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -752,6 +785,9 @@ packages:
 
   '@standard-schema/spec@1.0.0':
     resolution: {integrity: sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==}
+
+  '@standard-schema/utils@0.3.0':
+    resolution: {integrity: sha512-e7Mew686owMaPJVNNLs55PUvgz371nKgwsc4vxE49zsODpJEnxgxRo2y/OKrqueavXgZNMDVj3DdHFlaSAeU8g==}
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
@@ -2108,6 +2144,12 @@ packages:
     peerDependencies:
       react: ^19.1.0
 
+  react-hook-form@7.62.0:
+    resolution: {integrity: sha512-7KWFejc98xqG/F4bAxpL41NB3o1nnvQO1RWZT3TqRZYL8RryQETGfEdVnJN2fy1crCiBLLjkRBVK05j24FxJGA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18 || ^19
+
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
@@ -2472,6 +2514,9 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
+  zod@3.25.76:
+    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
+
 snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
@@ -2507,6 +2552,18 @@ snapshots:
       picocolors: 1.1.1
 
   '@babel/helper-validator-identifier@7.27.1': {}
+
+  '@conform-to/dom@1.8.2': {}
+
+  '@conform-to/react@1.8.2(react@19.1.0)':
+    dependencies:
+      '@conform-to/dom': 1.8.2
+      react: 19.1.0
+
+  '@conform-to/zod@1.8.2(zod@3.25.76)':
+    dependencies:
+      '@conform-to/dom': 1.8.2
+      zod: 3.25.76
 
   '@emnapi/core@1.4.5':
     dependencies:
@@ -2584,6 +2641,11 @@ snapshots:
       react-dom: 19.1.0(react@19.1.0)
 
   '@floating-ui/utils@0.2.10': {}
+
+  '@hookform/resolvers@5.2.1(react-hook-form@7.62.0(react@19.1.0))':
+    dependencies:
+      '@standard-schema/utils': 0.3.0
+      react-hook-form: 7.62.0(react@19.1.0)
 
   '@humanfs/core@0.19.1': {}
 
@@ -3066,6 +3128,8 @@ snapshots:
   '@rushstack/eslint-patch@1.12.0': {}
 
   '@standard-schema/spec@1.0.0': {}
+
+  '@standard-schema/utils@0.3.0': {}
 
   '@swc/helpers@0.5.15':
     dependencies:
@@ -4558,6 +4622,10 @@ snapshots:
       react: 19.1.0
       scheduler: 0.26.0
 
+  react-hook-form@7.62.0(react@19.1.0):
+    dependencies:
+      react: 19.1.0
+
   react-is@16.13.1: {}
 
   react-remove-scroll-bar@2.3.8(@types/react@19.1.9)(react@19.1.0):
@@ -5042,3 +5110,5 @@ snapshots:
   yallist@5.0.0: {}
 
   yocto-queue@0.1.0: {}
+
+  zod@3.25.76: {}
